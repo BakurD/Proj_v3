@@ -1,0 +1,3 @@
+---
+ansible_user                 : ubuntu
+ansible_ssh_private_key_file : /home/bakur/Study/Proj_v3/ansible/CI_CD.pem

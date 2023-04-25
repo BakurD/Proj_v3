@@ -1,0 +1,6 @@
+- name: It will be install docker 
+  hosts: aws_ec2
+  become: true
+
+  roles:
+    - deploy_docker_website
