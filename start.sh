@@ -118,6 +118,15 @@ echo "Now will be up IAC in remote states, wait 10 sec to remote states    "
 sleep 10
 
 cd ../ansible/
+export AWS_ACCESS_KEY_ID=$ACCES_KEY
+export AWS_SECRET_ACCESS_KEY=$SECRET_KEY
+export AWS_DEFAULT_REGION=$chose_region
 ansible-playbook playbook.yaml
 
 echo "Okay, at now, we install docker on our servers, build docker image, run docker image, and we has nginx server on 80 port, and php server on 8080 port"
+
+
+cd ..
+aws configure --profile backur
+./backup.sh
+0 0 */8 * * /home/bakur/Study/Proj_v3/backup.sh >/dev/null 2>&1

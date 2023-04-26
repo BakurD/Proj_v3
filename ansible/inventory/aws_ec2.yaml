@@ -21,4 +21,4 @@ keyed_groups:
 #     prefix: aws_region
 
 compose:
-  ansible_host: public_ip_address if public_ip_address is defined else private_ip_address
+  ansible_host: public_ip_address if public_ip_address is defined else private_ip_addressregions:  us-east-1
